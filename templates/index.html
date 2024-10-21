@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargar Música de Spotify</title>
+    <link rel="stylesheet" href="static/css/estilo1.css">
+    <link rel="stylesheet" href="static/css/estilo_barra.css">
+</head>
+<body>
+    <div class="titulo">
+        <h1>Descargar Música de Spotify</h1>
+    </div>
+
+    <div class="url_spotify">
+        <a href="http://Spotify.com" target="_blank"><b>Ir a Spotify</b></a>
+        <img src="static/img/spotify.png" alt="spotify">
+        <h2><b>SpotSound</b></h2>
+    </div>
+    
+    <div class="contenedor">
+        <form id="download-form">
+            <input type="text" id="url" placeholder="Ingrese el enlace de Spotify" required>
+            <input type="text" id="output_directory" placeholder="Directorio de salida" readonly>
+            <button type="button" id="browse-button">Seleccionar Carpeta</button>
+            <button id="btn" type="submit">Descargar</button>
+        </form>
+        
+      </div>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar">0%</div>
+    </div>
+
+    <div id="message"></div>
+    <div id="download-link" style="display: none;">
+        <a id="download-anchor" href="#" download>Descargar archivo</a>
+    </div>
+
+    <div class="derechos">
+        <p>Todos los derechos reservados <span>Copyright</span></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="static/js/mostrar_titulo.js"></script>
+</body>
+</html>
